@@ -184,13 +184,6 @@ O sistema analisa automaticamente as conversas para detectar:
 - **Validação** de dados de entrada
 - **Tratamento de erros** robusto
 
-## 📊 Dados do Redis
-
-O sistema conecta diretamente ao Redis usando a URL fornecida:
-```
-redis://default:ZIONEdmrqcFmWTiFGRovymGwJOoJtorl@yamabiko.proxy.rlwy.net:31057
-```
-
 ### Estrutura dos Dados
 - **Chaves**: Números de telefone com sufixo `@s.whatsapp.net`
 - **Valores**: Array JSON de mensagens

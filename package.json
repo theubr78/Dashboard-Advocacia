@@ -1,0 +1,29 @@
+{
+  "name": "dashboard-advocacia",
+  "version": "1.0.0",
+  "description": "Dashboard para acompanhamento de IA de atendimento via WhatsApp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/src/index.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "dashboard",
+    "advocacia",
+    "whatsapp",
+    "ia"
+  ],
+  "author": "Leonardo Agapito",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "ioredis": "^5.6.1"
+  }
+}
